@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="canvasで作るお絵描きアプリ">
+    <title>お絵描きアプリ</title>
+    <script src="./canvas.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>お絵描きアプリ</h1>      
+    </header>
+    <div class="prop">
+      <div>色：</div>
+      <input id="color" type="color">
+      <div class="label">太さ：</div>
+      <input id="width" type="number" min="1" max="30">
+      <button class="btn" onClick="button_onClick()">Clear</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>デモサイト</title>
+    <meta name="description" content="canvasとGSAPを使った手法をまとめてみました。">
+    <script src="./lib/perlin.js"></script>
+    <script src="./index.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header id="site-header">
+      <h1>デモサイト</h1>
+      <nav>
+        <ul class="gnav">
+          <li><a href="#">メニュー１</a></li>
+          <li><a href="#">メニュー２</a></li>
+          <li><a href="#">メニュー３</a></li>
+          <li><a href="#">メニュー４</a></li>
+        </ul>
+      </nav>
+      <div id="canvasHeader">
+        <div id="canvasImage">
+          <div id="bg"></div>
+          <canvas id="canvasWave">
+            Canvasに対応したブラウザを使用してください。
+          </canvas>
+          <canvas id="canvasOverlay">
+            Canvasに対応したブラウザを使用してください。
+          </canvas>
+        </div>
+        <div id="lead">
+          <h2 id="lead-main">メインコンセプト</h2>
+          <h3 id="lead-main">サブコンセプトXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
+        </div>
+      </div> 
+    </header>
+    <main>
+      <h2 class="title">Contents</h2>
+      <ul class="content-list">
+        <li>
+          <a href="./component/simpleanimation/index.html" target="_blank">
+            <img src="./noimage.png" alt="簡単な２次元アニメーション">
+            <dl>
+              <dt>簡単なアニメーション</dt>
+              <dd>canvasを使った基本的な２次元アニメーション。</dd>
+            </dl>
+          </a>
+        </li>  
+        <li>
+          <a href="./component/movebox/index.html" target="_blank">
+            <img src="./noimage.png" alt="箱が動く背景">
+            <dl>
+              <dt>箱が動く背景</dt>
+              <dd>箱が色を変えながら動いいてく背景。</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/randomlines/index.html" target="_blank">
+            <img src="./noimage.png" alt="ランダムな線模様の背景">
+            <dl>
+              <dt>ランダムな線模様の背景</dt>
+              <dd>画面を表示する度にランダムな線模様が変わる背景</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/randomtriangle/index.html" target="_blank">
+            <img src="./noimage.png" alt="ランダムな三角模様の背景">
+            <dl>
+              <dt>ランダムな三角模様の背景</dt>
+              <dd>画面を表示する度にランダムな三角模様が変わる背景</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/randomcircle/index.html" target="_blank">
+            <img src="./noimage.png" alt="ランダムな円模様の背景">
+            <dl>
+              <dt>ランダムな円模様の背景</dt>
+              <dd>画面を表示する度にランダムな円模様が変わる背景</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/drawing/index.html" target="_blank">
+            <img src="./noimage.png" alt="お絵描きができるWebアプリ">
+            <dl>
+              <dt>お絵描きができるWebアプリ</dt>
+              <dd>マウスやタッチパネルでお絵描きができるWebアプリ。線の太さと色は変更が可能。</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/analogclock/index.html" target="_blank">
+            <img src="./noimage.png" alt="アナログ時計">
+            <dl>
+              <dt>アナログ時計</dt>
+              <dd>ただただ動くアナログ時計のWebアプリ</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/firework1/index.html" target="_blank">
+            <img src="./noimage.png" alt="マウスクリックで打ち上げられる花火">
+            <dl>
+              <dt>花火その１</dt>
+              <dd>マウスでクリックした場所に花火が打ち上がるWebアプリ</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/firework2/index.html" target="_blank">
+            <img src="./noimage.png" alt="自動で打ち上げられる花火">
+            <dl>
+              <dt>花火その２</dt>
+              <dd>自動でランダムに花火が打ち上がるWebアプリ。マウスでクリックした場所にも打ち上がります。</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/constantrhythmwave/index.html" target="_blank">
+            <img src="./noimage.png" alt="一定のリズムで動く波形">
+            <dl>
+              <dt>波形その１</dt>
+              <dd>一定のリズムで動く波形。三角関数を使って一定のリズムを表現。</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/irregularrhythmwave/index.html" target="_blank">
+            <img src="./noimage.png" alt="不規則に動く波形">
+            <dl>
+              <dt>波形その２</dt>
+              <dd>不規則に動く波形。パーリンノイズを使って不規則な動きを表現。</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./component/motiongraphics/index.html" target="_blank">
+            <img src="./noimage.png" alt="モーショングラフィック">
+            <dl>
+              <dt>モーショングラフィック</dt>
+              <dd>不規則に動く波形と残像効果、背景のぼんやりとしたスポットライト効果で緩やかな動きを表現。このサイトのヘッダでも使用している。</dd>
+            </dl>
+          </a>
+        </li>
+
+      </ul>
+      
+    </main>
+  </body>
+</html>

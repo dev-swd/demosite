@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body {
+  background: #d8f7f8;
+}
+.prop {
+  display: flex;
+}
+.label,
+.btn {
+  margin-left: 50px;
+}
+#canvas {
+  border: 1px solid #000;
+  background: #fff;
+  margin-top: 20px;
+}
+
