@@ -95,7 +95,12 @@ window.onload = function() {
 
   window.addEventListener('resize', resize);
   function resize() {
-    cvsWave.width = window.innerWidth;
+    // drawImageしたときに、Windowsの場合に、スクロールバー幅分だけ
+    // cvsWaveがはみ出してしまう事象を解消
+    // cvsWaveはスクロールバー幅分を除いたwindow幅を設定
+    // cvsWave.width = window.innerWidth;
+    cvsWave.width = document.body.clientWidth;
+
     cvsOverlay.width = window.innerWidth;
   }
 
