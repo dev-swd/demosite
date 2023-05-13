@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrap {
+  top: 100;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+  display: flex;
+  scroll-snap-type: x mandatory;
+}
+.panel {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  flex: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  scroll-snap-align: start;
+}
+.page1 {
+  background-image: url(../image/coffee-g608e51a9f_1920.jpg);
+}
+.page2 {
+  background-image: url(../image/coffee-g3f25cc2f5_1920.jpg);
+}
+.page3 {
+  background-image: url(../image/coffee-gb7a7ee8eb_1920.jpg);
+}
+.page4 {
+  background-image: url(../image/coffee-g951dfd46a_1920.jpg);
+}
+.page5 {
+  background-image: url(../image/aroma-gf17572e90_1280.jpg);
+}
+
+.site-header {
+  background: rgba(255,255,255,0);
+  padding-top: 60px;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+}
+#title {
+  color: #fff;
+  margin-left: 50px;
+  width: 200px;
+}
+.gnav {
+  width: 100%;
+}
+.gnav > ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+.gnav > ul > li {
+  width: 200px;
+}
+.gnav > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.subheader {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  height: 150px;
+  width: 100%;
+}
+
+.main-frame1 {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.main-frame2 {
+  margin-top: 200px;
+  margin-left: 55%;
+}
+.main-frame3 {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.main-frame4 {
+  margin-top: 250px;
+  margin-left: 500px;
+}
+.main-frame5 {
+  margin-top: 280px;
+  margin-left: 300px;
+}
+.section > #subtitle {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.section > .white {
+  color: #fff;
+}
+.section > p {
+  margin-top: 20px;
+}
