@@ -93,6 +93,7 @@ window.onload = function() {
     ctxOverlay.fill();
   }
 
+  // 画面サイズ変更イベント
   window.addEventListener('resize', resize);
   function resize() {
     // drawImageしたときに、Windowsの場合に、スクロールバー幅分だけ
