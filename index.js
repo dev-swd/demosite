@@ -23,6 +23,7 @@ window.onload = function() {
     ctxOverlay.clearRect(0,0,cvsOverlay.width,cvsOverlay.height);
     drawSpot();
 
+    // canvasを統合する
     ctxOverlay.globalCompositeOperation = "lighter";
     ctxOverlay.drawImage(cvsWave,0,0);
   }
