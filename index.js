@@ -17,10 +17,12 @@ window.onload = function() {
     // 薄く暗くする
     ctxWave.fillStyle = "rgba(0,0,0,0.2)";
     ctxWave.fillRect(0,0,cvsWave.width,cvsWave.height);
-
+    // 波形描画
     drawWave();
 
+    // スポットライトを初期化
     ctxOverlay.clearRect(0,0,cvsOverlay.width,cvsOverlay.height);
+    // スポットライト描画
     drawSpot();
 
     // canvasを統合する
