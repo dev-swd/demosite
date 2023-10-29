@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Canvasで棒グラフを描画">
+    <title>Canvasでグラフ作成</title>
+    <script src="./barchart.js"></script>
+    <script src="./mixchart.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Cnavasでグラフ作成のサンプル</h1>
+    </header>
+    <section>
+      <h2>Bar Chart</h2>
+      <canvas id="graph01" width=800 height=500 style="border: 1px solid #000">
+        canvas要素をサポートしていません。
+      </canvas>
+    </section>
+    <section>
+      <h2>Mix Chart</h2>
+      <canvas id="graph02" width=800 height=500 style="border: 1px solid #000">
+        canvas要素をサポートしていません。
+      </canvas>
+    </section>
+  </body>
+  <script>
+    // bar chart
+    const cvs1 = document.getElementById('graph01');
+    const margin1 = {t: 100, b: 50, l: 100, r: 50};
+    const scale1 = {unit: 100, max: 1000, fontSize: 11};
+    const graphProp1 = {width: 30, cap: 'round'}
+    const data1 = {
+      title: ['１月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+      value: [
+        [200, 340, 100, 490, 445, 440, 900, 10, 235, 420, 1000, 488],
+        [340, 310, 200, 450, 245, 445, 800, 20, 235, 320, 995, 488],
+        [520, 200, 300, 400, 345, 435, 950, 30, 235, 220, 1001, 488],
+      ],
+      color: ['#00f', '#7cfc00', '#fa8072'],
+    };
+    barchart(cvs1, margin1, scale1, graphProp1, data1);
+
+    // mix chart
+    const cvs2 = document.getElementById('graph02');
+    const margin2 = {t: 100, b: 50, l: 75, r: 75};
+    const scale2 = {
+            main: {unit: 500, max: 3000},
+            sub: {unit: 10000},
+            fontSize: 11
+          };
+    const graphProp2 = {width: 15, cap: 'round'}
+    const data2 = {
+      title: ['１月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+      value: {
+        main: [
+          [200, 340, 100, 490, 445, 440, 900, 100, 235, 420, 1000, 488],
+          [340, 310, 200, 450, 245, 445, 800, 30, 235, 320, 995, 488],
+        ],
+        sub: [
+          [12000, 21000, 6000, 30500, 12000, 21000, 6000, 30500, 12000, 21000, 6000, 30000],
+          [15000, 16000, 7000, 20000, 21000, 23000, 36000, 37000, 38000, 39000, 40000, 49000],
+        ]
+      },
+      color: {
+        main: ['#7cfc00', '#00f'],
+        sub: ['#f00', '#fa8072'],
+      },
+    };
+    mixchart(cvs2, margin2, scale2, graphProp2, data2);
+
+  </script>
+</html>

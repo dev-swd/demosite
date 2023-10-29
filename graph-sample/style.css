@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.outer {
+  height: 180px;
+  width: 180px;
+  background: #000;
+  border: none;
+}
+
+.inner {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  background: #fff;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: none;
+}
+
+.border {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #000;
+}
+
