@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  margin: 100px auto auto 100px;
+  position: relative;
+  display: inline-block;
+  perspective: 1000px; /*この数字を小さくするとダイナミックな動きになります*/
+  width: 500px;
+  height: 400px;
+}
+.wrap input {
+  display: none;
+}
+
+.wrap .panel {
+  position: absolute;
+  display: inline-block;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  transition:1s;/*反転にかかる秒数*/  
+}
+
+.wrap input+.panel {
+  transform:rotateY(0deg);
+}
+.wrap input+.panel+.panel {
+  transform:rotateY(180deg);
+}
+.wrap input:checked+.panel {
+  transform:rotateY(-180deg);
+}
+.wrap input:checked+.panel+.panel {
+  transform:rotateY(0deg);
+}
+
+#back {
+  background-color: aqua;
+  width: 500px;
+  height: 400px;
+}
+#front {
+  background-color: chartreuse;
+  width: 500px;
+  height: 400px;
+}
